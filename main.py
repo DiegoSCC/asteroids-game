@@ -27,6 +27,7 @@ def main():
             # this fills the screen with a black background, display.flip refreshes the screen
         scr.fill("black")
         player.draw(scr)
+        player.update(dt)
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000
